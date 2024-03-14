@@ -1,8 +1,13 @@
 from flask import Flask, render_template, jsonify
+from healthcheck import HealthCheck
 from datetime import datetime
 import time
 
 app = Flask(__name__)
+health = HealthCheck()
+
+# Add a flask route to expose information
+app.add_url_rule('/healthcheck', 'healthcheck', view_func=lambda: health.run())
 
 # Funktion zur Abrufung der aktuellen Uhrzeit
 def get_current_time():
