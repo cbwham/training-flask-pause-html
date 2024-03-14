@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify
 from healthcheck import HealthCheck
 from datetime import datetime
-import time
+import time # noqa: DC007
 
 app = Flask(__name__)
 health = HealthCheck()
@@ -14,17 +14,17 @@ def get_current_time():
     return datetime.now().strftime('%H:%M:%S')
 
 # Route für die Startseite mit fortlaufender Uhrzeit-Anzeige
-@app.route('/')
+@app.route('/') # noqa: DC002
 def index():
     return render_template('index.html')
 
 # Route für die aktuelle Uhrzeit im JSON-Format
-@app.route('/get_time')
+@app.route('/get_time') # noqa: DC002
 def get_time():
     return jsonify({'time': get_current_time()})
 
 # Route für die Pausenzeiten
-@app.route('/zeiten')
+@app.route('/zeiten') # noqa: DC002
 def zeiten():
     current_time = datetime.now()
     montag_freitag_pausen = "09:30-09:45"
