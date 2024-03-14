@@ -1,0 +1,31 @@
+/* Allgemeine Stile für den Body */
+body {
+    background-color: #222; /* Hintergrundfarbe */
+    color: white; /* Textfarbe */
+    font-family: Arial, sans-serif; /* Schriftart */
+    display: flex; /* Flex-Layout */
+    justify-content: center; /* Zentrieren des Inhalts horizontal */
+    align-items: flex-start; /* An den oberen Rand ausrichten */
+    height: 100vh; /* Volle Höhe des Viewports */
+    margin: 0; /* Kein Außenabstand */
+    text-align: center; /* Zentrieren des Texts horizontal */
+    padding-top: 20px; /* Abstand nach oben */
+}
+
+/* Container-Stile */
+#container {
+    width: 80%; /* Breite des Containers */
+    max-width: 600px; /* Maximale Breite des Containers */
+}
+
+/* Stile für die laufende Uhrzeit */
+#timeDisplay {
+    font-size: 3em; /* Schriftgröße */
+    margin-bottom: 20px; /* Abstand nach unten */
+    color: blue; /* Farbe: Blau */
+}
+
+/* Stile für die Pausenanzeige */
+#pauseDisplay {
+    font-size: 1.2em; /* Schriftgröße */
+}
