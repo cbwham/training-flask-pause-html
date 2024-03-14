@@ -6,6 +6,7 @@ import time # noqa: DC007
 app = Flask(__name__)
 health = HealthCheck()
 
+app.static_folder = 'static'
 # Add a flask route to expose information
 app.add_url_rule('/healthcheck', 'healthcheck', view_func=lambda: health.run())
 
