@@ -26,7 +26,7 @@
 ### Windows
 
 ```shell
-git clone https://github.com/cbwham/training-flask.git
+git clone [https://github.com/cbwham/training-flask.git](https://github.com/cbwham/training-flask-pause-html.git)
 cd training-flask
 python -m venv .venv
 .venv\Scripts\activate.bat
