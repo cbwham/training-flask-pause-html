@@ -4,35 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortlaufende Uhrzeit und Pausenzeit</title>
-    <style>
-        body {
-            background-color: #222;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Oben am oberen Rand ausrichten */
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-            padding-top: 20px; /* Abstand zum oberen Rand */
-        }
-
-        #container {
-            width: 80%;
-            max-width: 600px;
-        }
-
-        #timeDisplay {
-            font-size: 3em;
-            margin-bottom: 20px;
-            color: blue; /* Ändern: Farbe der laufenden Uhrzeit auf Blau setzen */
-        }
-
-        #pauseDisplay {
-            font-size: 1.2em;
-        }
-    </style>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}"> <!-- Verlinkung zur CSS-Datei -->
 </head>
 <body>
     <div id="container">
